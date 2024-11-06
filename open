@@ -1,0 +1,28 @@
+import anypay from 'anypay'
+
+let paymentRequest = await anypay.request([{
+
+  currency: 'BSV'
+
+  to: [{
+    address: '123AeiwXiYswoNrNRCvPekkKJYvoUzyxbC',
+    amount: 5200,
+    currency: 'ARS'
+  }]
+
+}, {
+
+  currency: 'BCH',
+
+  to: [{
+    address: 'bitcoincash:qz0umvn625yf3yqc3z0zzs86fly7ue7ejs0dkzrrak',
+    amount: 2600,
+    currency: 'ARS'
+  }, {
+    address: 'bitcoincash:qz0umvn625yf3yqc3z0zzs86fly7ue7ejs0dkzrrak',
+    amount: 2600,
+    currency: 'ARS'
+  }]
+
+}])
+start
